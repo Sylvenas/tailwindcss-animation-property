@@ -1,6 +1,8 @@
-# tailwindcss-magic
+# tailwindcss-animation-property
 
-A plugin that provides utilities for animation property.
+A plugin that provides utilities for animation property. The usual animation properties are provided, and animaton properties can be written dynamically using [JIT mode](https://v2.tailwindcss.com/docs/just-in-time-mode), or new properties can be added using the [configuration](#configuration).
+
+Preview the example live on CodeSandbox: [Check out DEMO]()
 
 - [animation-duration](#animation-duration)
 - [animation-delay](#animation-delay)
@@ -10,9 +12,11 @@ A plugin that provides utilities for animation property.
 - [animation-timing-function](#animation-timing-function)
 - [animation-play-state](#animation-play-state)
 
+> if you don't want to write all the keyframes yourself. Try [tailwindcss-magic](https://www.npmjs.com/package/tailwindcss-magic) ?
+
 ## Usage
 
-### install
+### Installation
 
 ```sh
 # npm
@@ -22,7 +26,7 @@ npm i tailwindcss-animation-property
 yarn add tailwindcss-animation-property
 ```
 
-### import plugin
+### Import plugin
 
 Then add the plugin to your `tailwind.config.js` file:
 
@@ -151,13 +155,15 @@ defalut:
 - animation-play-paused -> `animation-play-state: paused`
 - animation-play-running -> `animation-play-state: running`
 
-## Config
+## Configuration
 
 You can configure custom animation properties by passing parameters to the plugin.
 
 ```js
 require("tailwindcss-animation-property")({
-  animationDuration: ["500ms", "6s", "0.5s"],
+  animationDuration: ["500ms", "6s", "0.5s"]
+  // `animation-duration-500ms`, `animation-duration-6s`, `animation-duration-0.5s`
+
   animationDelay: ["2000ms", "3s"],
   animationIterationCount: [6, 7],
   animationFillMode: [],
@@ -173,7 +179,7 @@ require("tailwindcss-animation-property")({
 });
 ```
 
-### develop & test
+### Develop & test
 
 - 📦 package
 

@@ -1,7 +1,7 @@
 {
-    "name": "tailwindcss-magic",
+    "name": "tailwindcss-animation-property",
     "version": "0.0.3",
-    "description": "Amazing tailwindcss animation plugins",
+    "description": "A plugin that provides utilities for animation property.",
     "main": "dist/index.js",
     "files": [
         "dist"
@@ -28,10 +28,16 @@
         "tailwindcss": "^3.0.22"
     },
     "keywords": [
-        "magic",
         "tailwindcss",
+        "plugin",
         "animation",
-        "plugin"
+        "animation-duration",
+        "animation-delay",
+        "animation-iteration-count",
+        "animation-direction",
+        "animation-timing-function",
+        "animation-play-state",
+        "property"
     ],
     "repository": {
         "type": "git",

@@ -2,7 +2,7 @@
 
 A plugin that provides utilities for animation property. The usual animation properties are provided, and animaton properties can be written dynamically using [JIT mode](https://v2.tailwindcss.com/docs/just-in-time-mode), or new properties can be added using the [configuration](#configuration).
 
-Preview the example live on CodeSandbox: [Check out DEMO]()
+Preview the example live on CodeSandbox: [Check out DEMO](https://codesandbox.io/s/nice-bell-czxzix)
 
 - [animation-duration](#animation-duration)
 - [animation-delay](#animation-delay)
@@ -12,7 +12,7 @@ Preview the example live on CodeSandbox: [Check out DEMO]()
 - [animation-timing-function](#animation-timing-function)
 - [animation-play-state](#animation-play-state)
 
-> if you don't want to write all the keyframes yourself. Try [tailwindcss-magic](https://www.npmjs.com/package/tailwindcss-magic) ?
+> If you don't want to write all the keyframes yourself. Try [tailwindcss-magic](https://www.npmjs.com/package/tailwindcss-magic).
 
 ## Usage
 

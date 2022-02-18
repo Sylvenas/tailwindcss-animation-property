@@ -1,6 +1,6 @@
 {
     "name": "tailwindcss-animation-property",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A plugin that provides utilities for animation property.",
     "main": "dist/index.js",
     "files": [

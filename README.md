@@ -1,8 +1,8 @@
 # tailwindcss-animation-property
 
-A plugin that provides utilities for animation property. The usual animation properties are provided, and animaton properties can be written dynamically using [JIT mode](https://v2.tailwindcss.com/docs/just-in-time-mode), or new properties can be added using the [configuration](#configuration).
+A plugin that provides utilities for animation property. Not only does the plugin provide the usual animation properties, these also support dynamic writing using [JIT mode](https://v2.tailwindcss.com/docs/just-in-time-mode), even you can add new properties by using [configuration](#configuration).
 
-Preview the example live on CodeSandbox: [Check out DEMO](https://codesandbox.io/s/nice-bell-czxzix)
+The example can be previewed on CodeSandbox: [Check out DEMO](https://codesandbox.io/s/nice-bell-czxzix)
 
 - [animation-duration](#animation-duration)
 - [animation-delay](#animation-delay)
@@ -12,7 +12,7 @@ Preview the example live on CodeSandbox: [Check out DEMO](https://codesandbox.io
 - [animation-timing-function](#animation-timing-function)
 - [animation-play-state](#animation-play-state)
 
-> If you don't want to write all the keyframes yourself. Try [tailwindcss-magic](https://www.npmjs.com/package/tailwindcss-magic).
+> If you don't want to write all the keyframes yourself. Try [tailwindcss-magic](https://github.com/Sylvenas/tailwindcss-magic).
 
 ## Usage
 
@@ -165,17 +165,31 @@ require("tailwindcss-animation-property")({
   // `animation-duration-500ms`, `animation-duration-6s`, `animation-duration-0.5s`
 
   animationDelay: ["2000ms", "3s"],
+  // `animation-delay-2000ms`, `animation-delay-3s`
+
   animationIterationCount: [6, 7],
-  animationFillMode: [],
-  animationDirection: [],
+  // `animation-iteration-6`, `animation-iteration-7`
+
+  animationFillMode: ['xxx'],
+  // `animation-fill-xxx`
+
+  animationDirection: ['xxx'],
+  // `animation-direction-xxx`
+
   animationTimingFunction: {
     "in-out-cubic": ".65,0,.35,1",
   },
-  animationPlayState: [],
-  animationStepsStart: [],
-  animationStepsEnd: [],
-  animationStepsBoth: [],
-  animationStepsNone: [],
+  // `animation-timing-in-out-cubic`
+
+  animationPlayState: ['xxx'],
+  // `animation-direction-xxx`
+
+  animationStepsStart: [6,8],
+  // `animate-steps-start-6`,`animate-steps-start-8`
+
+  animationStepsEnd: [],  // same as animationStepsStart
+  animationStepsBoth: [], // ...
+  animationStepsNone: [], // ...
 });
 ```
 

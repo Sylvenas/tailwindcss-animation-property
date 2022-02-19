@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .animation-magic {
+  .animation-magic-repeat-2 {
     @apply magic-magic animate-iteration-2;
   }
 }

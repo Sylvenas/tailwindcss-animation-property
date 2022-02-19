@@ -49,7 +49,21 @@ module.exports = {
 <div className="animation-duration-3s"></div>
 ```
 
-## Default & Custom animation property
+### Used with @apply
+
+```css
+@layer components {
+  .animation-magic-repert-2 {
+    @apply magic-magic animate-iteration-2;
+  }
+}
+```
+
+```html
+<div className="animation-magic-repert-2"></div>
+```
+
+## Default & Customized animation property
 
 ### animation-duration
 
@@ -193,7 +207,12 @@ require("tailwindcss-animation-property")({
 });
 ```
 
-### Develop & test
+## Q & A
+
+- How do I remember so many animation names?
+  `tailwindcss-animation-property` and [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) work well together, so take it easy!
+
+## Develop & test
 
 - 📦 package
 

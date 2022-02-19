@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .animation-magic {
+    @apply magic-magic animate-iteration-2;
+  }
+}
+
 html,
 body {
   padding: 0;

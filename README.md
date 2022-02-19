@@ -209,7 +209,7 @@ require("tailwindcss-animation-property")({
 
 ## Q & A
 
-- How do I remember so many animation names?
+- How do I remember so many animation names?  
   `tailwindcss-animation-property` and [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) work well together, so take it easy!
 
 ## Develop & test

@@ -207,21 +207,28 @@ require("tailwindcss-animation-property")({
 });
 ```
 
-## Q & A
+## FAQ
 
 - How do I remember so many animation names?  
-  `tailwindcss-animation-property` and [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) work well together, so take it easy!
+  `tailwindcss-animation-property` and [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) work well together, take it easy!
 
-## Develop & test
+## Running
 
-- 📦 package
+- locally example
+
+```sh
+cd example
+yarn dev
+```
+
+- 📦 Package
 
 ```
 yarn
 yarn build
 ```
 
-- unit test
+- Unit test
 
 ```
 npm run test
